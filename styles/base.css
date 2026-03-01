@@ -26,6 +26,8 @@
 :root {
     --primary-color: #28a745;
     --primary-dark: #1f7a37;
+    --button-color: #34d058;
+    --button-dark: #22863a;
     --bg-dark: #212121;
     --bg-darker: #1a1a1a;
     --text-light: #ffffff;
@@ -81,13 +83,13 @@ body::before {
     display: inline-block;
     padding: 18px 35px;
     background: transparent;  
-    color: var(--primary-color); 
+    color: var(--button-color); 
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     border-radius: 50px;
     transition: var(--transition);
-    border: 2px solid var(--primary-color); 
+    border: 2px solid var(--button-color); 
     cursor: pointer;
     text-align: center;
     letter-spacing: 0.5px;
@@ -96,23 +98,23 @@ body::before {
 }
 
 .button:hover {
-    background: var(--primary-color);  
+    background: var(--button-color);  
     color: var(--text-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+    box-shadow: 0 8px 25px rgba(52, 208, 88, 0.4);
 }
 
 .button-white {
     background: transparent;
-    color: var(--primary-color);
-    border-color: var(--primary-color);
+    color: var(--button-color);
+    border-color: var(--button-color);
     box-shadow: none;
 }
 
 .button-white:hover {
-    background: var(--primary-color);
+    background: var(--button-color);
     color: var(--text-dark);
-    border-color: var(--primary-color);
+    border-color: var(--button-color);
 }
 
 /* Анимации */
