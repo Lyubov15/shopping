@@ -24,14 +24,14 @@
 }
 
 :root {
-    --primary-color: #f8ff23;
-    --primary-dark: #e5ee1c;
+    --primary-color: #28a745;
+    --primary-dark: #1f7a37;
     --bg-dark: #212121;
     --bg-darker: #1a1a1a;
     --text-light: #ffffff;
-    --text-gray: #d4d4d4;
+    --text-gray: #ffffff;
     --text-dark: #333333;
-    --accent-gradient: linear-gradient(135deg, #f8ff23 0%, #ffd700 100%);
+    --accent-gradient: linear-gradient(135deg, #28a745 0%, #2ecc71 100%);
     --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     --transition: all 0.3s ease;
 }
@@ -41,9 +41,19 @@ body {
     font-family: 'Geometria', Arial, Helvetica, sans-serif;
     color: var(--text-light);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow: hidden;
     min-height: 100vh;
     position: relative;
+}
+
+/* дополнительное правило для скрытия полос прокрутки в браузерах */
+html {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+::-webkit-scrollbar {
+    display: none; 
 }
 
 body::before {
@@ -53,7 +63,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 50%, rgba(248, 255, 35, 0.05) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 50%, rgba(40, 167, 69, 0.05) 0%, transparent 50%);
     pointer-events: none;
     z-index: -1;
 }
@@ -89,7 +99,7 @@ body::before {
     background: var(--primary-color);  
     color: var(--text-dark);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(248, 255, 35, 0.4);
+    box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
 }
 
 .button-white {
@@ -128,9 +138,9 @@ body::before {
 
 @keyframes pulseGlow {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(248, 255, 35, 0.3);
+        box-shadow: 0 0 20px rgba(40, 167, 69, 0.3);
     }
     50% {
-        box-shadow: 0 0 40px rgba(248, 255, 35, 0.6);
+        box-shadow: 0 0 40px rgba(40, 167, 69, 0.6);
     }
 }

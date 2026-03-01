@@ -52,3 +52,19 @@
         min-width: 120px;
     }
 }
+
+/* на мобильных разрешаем вертикальную прокрутку */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    html {
+        -ms-overflow-style: auto; /* вернуть стиль полосы прокрутки */
+        scrollbar-width: auto;
+    }
+    ::-webkit-scrollbar {
+        display: block;
+        width: 6px;
+    }
+}
